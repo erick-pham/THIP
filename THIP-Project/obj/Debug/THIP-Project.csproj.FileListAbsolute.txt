@@ -71,6 +71,5 @@ C:\Users\Kuga\Desktop\THIP\THIP-Project\bin\Microsoft.AspNet.Membership.OpenAuth
 C:\Users\Kuga\Desktop\THIP\THIP-Project\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Kuga\Desktop\THIP\THIP-Project\bin\Org.Mentalis.Security.Cryptography.xml
 C:\Users\Kuga\Desktop\THIP\THIP-Project\bin\Mono.Math.xml
-C:\Users\Kuga\Desktop\THIP\THIP-Project\obj\Debug\THIP-Project.csprojResolveAssemblyReference.cache
 C:\Users\Kuga\Desktop\THIP\THIP-Project\obj\Debug\WebApplication1.dll
 C:\Users\Kuga\Desktop\THIP\THIP-Project\obj\Debug\WebApplication1.pdb

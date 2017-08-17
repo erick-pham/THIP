@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollTableBody.js"></script>
     <script src="js/Manager.js"></script>
 
     <link href="Styles/bootstrap.css" rel="stylesheet" />
@@ -28,7 +29,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <div class="row">
                         <div class="menu-wrap">
                             <div class="list-group">
@@ -43,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-10">
                     <div class="row" style="background-color: #ffffff">
                         <div class="content-wrap">
                             <div class="bar">Managerment Page</div>
@@ -52,17 +53,24 @@
                                 <div class="row" style="background-color: #ffffff">
                                     <div class="detail-task">
                                         <div class="title">Detailed Task</div>
-                                        <p>ddaya laf detail task</p>
-                                        <p>ddaya laf detail task</p>
-                                        <p>ddaya laf detail task</p>
-                                        <p>ddaya laf detail task</p>
-                                        <p>ddaya laf detail task</p>
-                                        <p>ddaya laf detail task</p>
-                                        <p>ddaya laf detail task</p>
-
-                                        <p>ddaya laf detail task</p>
-
-                                        <p>ddaya laf detail task</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <strong>Task Name: </strong><span id="task-name"></span>
+                                                <br />
+                                                <strong>Start: </strong><span id="task-start"></span>
+                                                <br />
+                                                <strong>Deadline: </strong><span id="task-deadline"></span>
+                                                <br />
+                                                <strong>Location: </strong><span id="task-location"></span>
+                                                <br />
+                                                <strong>Cost: </strong><span id="task-cost"><i>vnđ</i></span><br />
+                                                <strong>Resource: </strong><span id="task-resource"></span>
+                                                <br />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="Images/avatar.jpg" class="img-responsive img-thumbnail" style="max-height: 200px;" />
+                                            </div>
+                                        </div>
                                         <hr />
                                         <div class="title">Accepted</div>
                                     </div>
@@ -73,30 +81,102 @@
                                 <div class="row" style="background-color: #ffffff">
                                     <div class="daily-confirm">
                                         <div class="title">Daily confirm</div>
-                                        <p>ddaya laf confirm task</p>
-                                        <p>ddaya laf confirm task</p>
-                                        <p>ddaya laf confirm task</p>
-                                        <p>ddaya laf confirm task</p>
+                                        <div class="table-responsive">
+                                            <table id="daily-confirm-table" class="table table-bordred table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Content</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
 
-                                        <p>ddaya laf confirm task</p>
-                                        <p>ddaya laf confirm task</p>
-                                        <p>ddaya laf confirm task</p>
-                                        <p>ddaya laf confirm task</p>
-                                        <p>ddaya laf confirm task</p>
+                                                    <%
+                                                        for (int i = 0; i < confirm_task_list.Rows.Count; i++)
+                                                        {
+                                                            //Response.Write("<tr id=\"" + confirm_task_list.Rows[i]["id_pct"] + "\"></tr>\n");
+                                                            Response.Write("<tr>\n");
+                                                            Response.Write("<td>" + confirm_task_list.Rows[i]["id_pct"] + "</td>\n");
+                                                            Response.Write("<td>" + confirm_task_list.Rows[i]["cont"] + "</td>\n");
+                                                            //Response.Write("<td>");
+                                                            //Response.Write("<button class=\"btn btn-primary btn-xs\"><span class=\"glyphicon glyphicon-pencil\"></span></button>");
+                                                            //Response.Write("</td>\n");
+
+                                                            Response.Write("</tr>\n");
+                                                        }
+                                                    %>
+                                                    <!--   <tr class="info">
+                                                        <td>Repair PC</td>
+                                                        <td>
+                                                            <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="active">
+                                                        <td>Build Tower</td>
+                                                        <td>
+                                                            <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="active">
+                                                        <td>Buy Car</td>
+                                                        <td>
+                                                            <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+                                                        </td>
+                                                    </tr>-->
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                     <div class="task-list">
                                         <div class="title">Task List</div>
-                                        <p>ddaya laf tassk list</p>
-                                        <p>ddaya laf tassk list</p>
-                                        <p>ddaya laf tassk list</p>
-                                        <p>ddaya laf tassk list</p>
-                                        <p>ddaya laf tassk list</p>
-                                        <p>ddaya laf tassk list</p>
-
-                                        <p>ddaya laf tassk list</p>
-                                        <p>ddaya laf tassk list</p>
-
-                                        <p>ddaya laf tassk list</p>
+                                        <div class="table-responsive">
+                                            <table id="task-list-table" class="table table-bordred table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name Task</th>
+                                                        <th>Location</th>
+                                                        <th>Progress</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="warning">
+                                                        <td>Report</td>
+                                                        <td></td>
+                                                        <td>Chưa hoàn thành</td>
+                                                    </tr>
+                                                    <tr class="danger">
+                                                        <td>Clean Car</td>
+                                                        <td></td>
+                                                        <td>Trễ 3 ngày</td>
+                                                    </tr>
+                                                    <tr class="active">
+                                                        <td>Meeting</td>
+                                                        <td></td>
+                                                        <td>Hoàn thành</td>
+                                                    </tr>
+                                                    <tr class="active">
+                                                        <td>Meeting</td>
+                                                        <td></td>
+                                                        <td>Hoàn thành</td>
+                                                    </tr>
+                                                    <tr class="active">
+                                                        <td>Meeting</td>
+                                                        <td></td>
+                                                        <td>Hoàn thành</td>
+                                                    </tr>
+                                                    <tr class="active">
+                                                        <td>Meeting</td>
+                                                        <td></td>
+                                                        <td>Hoàn thành</td>
+                                                    </tr>
+                                                    <tr class="active">
+                                                        <td>Meeting</td>
+                                                        <td></td>
+                                                        <td>Hoàn thành</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -185,6 +265,7 @@
                 <!--end col-lg-9-->
             </div>
         </div>
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
     </form>
 </body>
 </html>

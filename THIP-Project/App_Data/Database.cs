@@ -13,20 +13,21 @@ namespace My_Library
     {
         // thuộc tính
         SqlConnection conn;
-        //String datasource = "192.168.10.100";
-        ////String port = "1433";
-        //String database = "thie83c4_TH02";
-        //String username = "sa";
-        //String password = "Kuga1996";
+        String datasource = "192.168.10.100";
+        //String port = "1433";
+        String database = "thie83c4_TH01";
+        String username = "sa";
+        String password = "Kuga1996";
+
         //String datasource = "112.78.2.112";
         //String database = "thie83c4_TH05";
         //String username = "thie83c4_TH01";
         //String password = "!1Qwerty123";
 
-        String datasource = "THIPFMS.mssql.somee.com";
-        String database = "THIPFMS";
-        String username = "bossdiemmaimai_SQLLogin_1";
-        String password = "1upfbzj8vl";
+        //String datasource = "THIPFMS.mssql.somee.com";
+        //String database = "THIPFMS";
+        //String username = "bossdiemmaimai_SQLLogin_1";
+        //String password = "1upfbzj8vl";
         String connString;
 
         // hàm khởi tạo

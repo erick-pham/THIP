@@ -130,7 +130,6 @@
     <Content Include="Images\map-min.png" />
     <Content Include="js\Chart.js" />
     <Content Include="js\Manager.js" />
-    <Content Include="js\wheelzoom.js" />
     <Content Include="Manager.aspx" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Customer.aspx" />
