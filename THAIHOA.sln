@@ -5,27 +5,6 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THIP-Project", "THIP-Project\THIP-Project.csproj", "{BE49B2C2-3A91-4674-B3A6-AA0B34A2AEA0}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "THIP-Site", "http://localhost:3679", "{A909841E-8A94-423E-9F10-F989F19911B0}"
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_3679"
-		Debug.AspNetCompiler.PhysicalPath = "THIP-Site\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3679\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_3679"
-		Release.AspNetCompiler.PhysicalPath = "THIP-Site\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3679\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "THIP-Site\"
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,10 +15,6 @@ Global
 		{BE49B2C2-3A91-4674-B3A6-AA0B34A2AEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE49B2C2-3A91-4674-B3A6-AA0B34A2AEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE49B2C2-3A91-4674-B3A6-AA0B34A2AEA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A909841E-8A94-423E-9F10-F989F19911B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A909841E-8A94-423E-9F10-F989F19911B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A909841E-8A94-423E-9F10-F989F19911B0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{A909841E-8A94-423E-9F10-F989F19911B0}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

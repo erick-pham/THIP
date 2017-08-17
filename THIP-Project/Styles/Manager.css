@@ -1,0 +1,132 @@
+﻿body {
+    font-size: 14px;
+    font-family: Tahoma, Arial, 'Times New Roman';
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #DFDFDF;
+}
+
+.container {
+    width: 100%;
+    background-color: #EEF2F4;
+}
+
+/* header user login logout*/
+.my-header {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    background-color: #535C69;
+}
+
+    .my-header .logo {
+        height: 30px;
+        width: 150px;
+        float: left;
+        background-size: cover;
+        background-position: center center;
+        background-image: url("../Images/logo-thip.jpg");
+    }
+
+    .my-header .user {
+        height: 30px;
+        width: auto;
+        float: right;
+    }
+
+        .my-header .user > a {
+            color: #E1FFFF;
+        }
+/* left menu*/
+.menu-wrap {
+    height: auto;
+    width: 100%;
+    background-color: #E6EAED;
+    float: left;
+}
+
+    .menu-wrap .list-group {
+        margin: 0;
+    }
+
+.list-group-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: auto;
+    border: none;
+    font-size: medium;
+    background-color: #EEF2F4;
+}
+/*right content*/
+.content-wrap {
+    height: auto;
+    width: auto;
+    background-color: #FFFFFF;
+}
+
+    .content-wrap .bar {
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        font-size: 18pt;
+        background-color: #FFFFFF;
+    }
+
+    .content-wrap .title {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16pt;
+        background-color: #EEF2F4;
+    }
+
+
+
+
+
+
+.detail-task {
+    height: auto;
+    border: groove 1px #87c540;
+    padding: 5px;
+    margin: 5px;
+}
+
+.daily-confirm {
+    height: auto;
+    border: groove 1px #87c540;
+    padding: 5px;
+    margin: 5px;
+}
+
+.task-list {
+    height: auto;
+    border: groove 1px #87c540;
+    padding: 5px;
+    margin: 5px;
+}
+
+.detail-task .title {
+    color: #4296D5;
+    font-size: 14pt;
+}
+
+.daily-confirm .title {
+    color: #4296D5;
+    font-size: 14pt;
+}
+
+.task-list .title {
+    color: #4296D5;
+    font-size: 14pt;
+}
