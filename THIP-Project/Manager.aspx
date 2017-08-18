@@ -33,21 +33,17 @@
                     <div class="row">
                         <div class="menu-wrap">
                             <div class="list-group">
-                                <a href="#" class="list-group-item"><i class="fa fa-comment-o"></i>Daily<span class="badge">14</span></a>
-                                <a href="#" class="list-group-item"><i class="fa fa-comment-o"></i>My Task</a>
-                                <a href="#" class="list-group-item"><i class="fa fa-search"></i>Calendar</a>
-                                <a href="#" class="list-group-item"><i class="fa fa-user"></i>Lorem ipsum</a>
-                                <a href="#" class="list-group-item"><i class="fa fa-folder-open-o"></i>Lorem ipsum <span class="badge">14</span></a>
-                                <a href="#" class="list-group-item"><i class="fa fa-bar-chart-o"></i>Lorem ipsumr <span class="badge">14</span></a>
-                                <a href="#" class="list-group-item"><i class="fa fa-envelope"></i>Lorem ipsum</a>
+                                <a href="#" class="list-group-item" id="daily">Daily<span class="badge">14</span></a>
+                                <a href="#" class="list-group-item" id="my-task">My Task</a>
+                                <a href="#" class="list-group-item" id="calendar">Calendar</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-10">
                     <div class="row" style="background-color: #ffffff">
-                        <div class="content-wrap">
-                            <div class="bar">Managerment Page</div>
+                        <div class="content-wrap" id="content-wrap">
+                            <div class="bar">USER DAILY</div>
                             <div class="title">Daily</div>
                             <div class="col-lg-8">
                                 <div class="row" style="background-color: #ffffff">
@@ -55,7 +51,7 @@
                                         <div class="title">Detailed Task</div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <strong>Task Name: </strong><span id="task-name"></span>
+                                                <strong>Name: </strong><span id="task-name"></span>
                                                 <br />
                                                 <strong>Start: </strong><span id="task-start"></span>
                                                 <br />
@@ -63,16 +59,30 @@
                                                 <br />
                                                 <strong>Location: </strong><span id="task-location"></span>
                                                 <br />
-                                                <strong>Cost: </strong><span id="task-cost"><i>vnđ</i></span><br />
+                                                <strong>Cost: </strong><span id="task-cost"></span><i>vnđ</i><br />
                                                 <strong>Resource: </strong><span id="task-resource"></span>
                                                 <br />
                                             </div>
                                             <div class="col-md-6">
-                                                <img src="Images/avatar.jpg" class="img-responsive img-thumbnail" style="max-height: 200px;" />
+                                                <img id="task-img" src="Images/hoga.jpg" class="img-responsive img-thumbnail" style="max-height: 200px; max-width: 300px" />
                                             </div>
                                         </div>
                                         <hr />
                                         <div class="title">Accepted</div>
+                                        <div class="row" id="user-accept">
+                                            <div class="col-md-3">
+                                                <img src="Images/chavis-user.jpg" style="height: 40px; width: 40px" />
+                                                <p>Mr. Chavis</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="Images/mrtoan.jpg" style="height: 40px; width: 40px" />
+                                                <p>Mr. Toan</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="Images/lan.jpg" style="height: 40px; width: 40px" />
+                                                <p>Ms. Lan</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

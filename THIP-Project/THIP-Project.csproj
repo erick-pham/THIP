@@ -126,6 +126,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\chavis-user.jpg" />
+    <Content Include="Images\lan.jpg" />
+    <Content Include="Images\mrtoan.jpg" />
+    <Content Include="Images\tudien.jpg" />
+    <Content Include="Images\tuoicay.jpg" />
+    <Content Include="Images\hoga.jpg" />
     <Content Include="Images\logo-thip.jpg" />
     <Content Include="Images\map-min.png" />
     <Content Include="js\Chart.js" />

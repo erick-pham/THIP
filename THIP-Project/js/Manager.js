@@ -1,6 +1,4 @@
 ﻿$(document).ready(function () {
-
-
     var table = document.getElementById("daily-confirm-table");
     var rows = table.getElementsByTagName("tr");
     for (i = 1; i < rows.length; i++) {
@@ -20,6 +18,21 @@
                     $('#task-deadline').html(data.d[3]);
                     $('#task-location').html(data.d[7]);
                     $('#task-cost').html(data.d[10]);
+                    $("#task-img").attr("src", data.d[12]);
+                    //$.ajax({
+                    //    type: "POST",
+                    //    url: "Manager.aspx/GetTaskAccept",
+                    //    data: JSON.stringify({ idTask: id }),
+                    //    contentType: "application/json; charset=utf-8",
+                    //    dataType: "json",
+                    //    success: function (data) {
+                    //        alert(data.d);
+                    //        alert("load data: users accepted this task");
+                    //    },
+                    //    error: function () {
+                    //        alert('Data load: Error');
+                    //    }
+                    //});
                 },
                 error: function () {
                     alert('Data load: Error');
@@ -27,9 +40,9 @@
             });
         }
     };
-    $("#daily-confirm-table button").click(function () {
-        //alert($(this).target);
-        // alert('accept process');
+
+    $("#calendar").click(function () {
+        $("#content-wrap").html("<input type=date>");
     });
     //$("#Taskstable #checkall").click(function () {
     //    if ($("#Taskstable #checkall").is(':checked')) {
@@ -43,13 +56,4 @@
     //        });
     //    }
     //});
-
-
-
-
-    //}
-    // When the user clicks anywhere outside of the modal, close it
-    // When the user clicks anywhere outside of the modal, close it
-
-
 });

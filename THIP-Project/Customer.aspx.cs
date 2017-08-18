@@ -20,7 +20,7 @@ namespace THAIHOA_FMS
         protected void Page_Load(object sender, EventArgs e)
         {
             int now_year = DateTime.Now.Year;
-            String idKH = "A101";
+            //String idKH = "A101";
             //String getStr = "select * from chiphi_kh where idkh='" + idKH + "' and nam=" + now_year;
             //chiphi_KH = db.getData(getStr);
             //DataView dv = chiphi_KH.DefaultView;
